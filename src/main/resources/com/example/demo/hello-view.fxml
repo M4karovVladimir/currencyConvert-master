@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="323.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;">
+      <children>
+          <Button layoutX="205.0" layoutY="148.0" onAction="#onHelloButtonClick" text="конвертировать" />
+         <Label layoutX="23.0" layoutY="37.0" prefHeight="25.0" prefWidth="151.0" text="Введите сумму в рублях " textFill="#f8f8f8" />
+         <Label layoutX="30.0" layoutY="70.0" prefHeight="17.0" prefWidth="107.0" style="-fx-background-color: white;" />
+         <Label layoutX="391.0" layoutY="41.0" style="-fx-background-color: black;" text="Полученная Сумма" textFill="WHITE" />
+         <Label layoutX="391.0" layoutY="70.0" prefHeight="17.0" prefWidth="106.0" style="-fx-background-color: white;" />
+         <Label layoutX="209.0" layoutY="41.0" text="Выберите валюту" textFill="#fffbfb" />
+         <ComboBox fx:id="typeOfMoneyComboBox" layoutX="192.0" layoutY="66.0" prefWidth="150.0" />
+      </children>
+   </AnchorPane>
+</VBox>
